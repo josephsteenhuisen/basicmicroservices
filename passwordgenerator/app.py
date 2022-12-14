@@ -32,7 +32,7 @@ def compute():
 
     for i in range(password_l):
       char = random.randint(0, len(char_list))
-      new_password = new_password + char
+      new_password = new_password + char_list[char]
       
 
   
