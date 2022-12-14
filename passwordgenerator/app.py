@@ -17,7 +17,7 @@ def echo():
     return json.dumps(returnDictionary)
 
 #
-# curl -d "{ \"password\" : \"int\" }" -X POST http://localhost:9003/check  -H "Content-type: application/json"
+# curl -d "{ \"password\" : \"10\" }" -X POST http://localhost:9003/check  -H "Content-type: application/json"
 #
 @app.route("/check", methods=["POST"])
 def compute():
