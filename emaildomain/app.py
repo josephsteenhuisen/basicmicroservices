@@ -18,8 +18,8 @@ def echo():
     return json.dumps(returnDictionary)
 
 #
-# curl -d "{ \"email\" : \"foo@bar\" }" -X POST http://localhost:9002/check
-#
+# curl -d "{ \"email\" : \"joesteenhuisen@gmail.com\" }" -X POST http://localhost:9002/check
+# 
 @app.route("/check", methods=["POST"])
 def compute():
 
@@ -29,7 +29,11 @@ def compute():
 
     A =[ "gmail.com"	,
 		"yahoo.com"	,
-    "outlook.com",
+    		"outlook.com",
+		"uconn.edu", 
+		".edu", 
+		".net", 
+		".com", 
 		"hotmail.com",	
 		"aol.com"	,
 		"hotmail.co.uk",	
